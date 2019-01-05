@@ -55,6 +55,10 @@
 #include "llvm/Transforms/Utils.h"
 #endif
 
+#if LLVM_VERSION_CODE >= LLVM_VERSION(8, 0)
+#include "llvm/Transforms/Scalar/Scalarizer.h"
+#endif
+
 #include <sstream>
 
 using namespace llvm;
